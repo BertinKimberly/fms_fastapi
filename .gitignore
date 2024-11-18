@@ -1,0 +1,52 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+.env/
+*.env
+
+# IDE or editor folders
+.idea/
+.vscode/
+
+# Pytest cache
+.cache/
+
+# Coverage reports
+.coverage
+*.coveragerc
+*.tox
+
+# SQLAlchemy or database-related
+db.sqlite3
+*.db
+
+# Logs
+*.log
+
+# FastAPI auto-generated documentation (Swagger UI)
+swagger-ui/
+
+# Pydantic's .pyi files
+*.pyi
+
+# Local config files
+*.local
+
+# Migrations (if using Alembic or similar tool for migrations)
+alembic/
+.ini
+
+# Docker-related
+docker-compose.override.yml
+Dockerfile
+.docker/
+
+# pyenv
+.python-version
+
+# linting and formatters
+*.flake8
