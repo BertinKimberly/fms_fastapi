@@ -10,7 +10,6 @@ venv/
 
 # IDE or editor folders
 .idea/
-.vscode/
 
 # Pytest cache
 .cache/
@@ -50,3 +49,7 @@ Dockerfile
 
 # linting and formatters
 *.flake8
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
