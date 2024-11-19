@@ -2,15 +2,12 @@ from pydantic import BaseModel
 from enum import Enum
 from typing import Optional
 
-class FieldType(str, Enum):
-    TRANSPORT = "Transport"
-    AGRICULTURE = "Agriculture"
-    TRADE = "Trade"
-    ENVIRONMENTAL_PROTECTION = "Environmental Protection"
+
+
 
 class ProjectBase(BaseModel):
     name: str
-    field: FieldType
+    field: str
     description: str
     budget: int
 

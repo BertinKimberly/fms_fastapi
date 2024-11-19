@@ -14,7 +14,11 @@ def read_projects(skip: int = 0, limit: int = 10, db: Session = Depends(get_db))
 
 @router.post("/", response_model=Project)
 def create_new_project(project: ProjectCreate, db: Session = Depends(get_db)):
-    return create_project(db, project)
+    try:
+        return create_project(db, project)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error creating project: {str(e)}")
+
 
 @router.get("/{project_id}", response_model=Project)
 def read_project(project_id: int, db: Session = Depends(get_db)):
