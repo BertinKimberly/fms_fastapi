@@ -4,21 +4,21 @@ A web-based platform for managing freelance projects, clients, and invoices. The
 
 ### Features
 
-* User Management: User authentication and management for freelancers and clients.
-* Projects: Track and manage freelance projects.
-* Clients: Maintain client information and associated project details.
-* Invoices: Create, update, and manage invoices.
-* Authentication: Secure user login and signup system.
-* CRUD Operations: Easy to manage data for users, clients, and projects.
+-  User Management: User authentication and management for freelancers and clients.
+-  Projects: Track and manage freelance projects.
+-  Clients: Maintain client information and associated project details.
+-  Invoices: Create, update, and manage invoices.
+-  Authentication: Secure user login and signup system.
+-  CRUD Operations: Easy to manage data for users, clients, and projects.
 
 #### Tech Stack
 
-- Backend: FastAPI
-- Database: PostgreSQL
-- Authentication: JWT (JSON Web Token)
-- ORM: SQLAlchemy
-- Password Hashing: Passlib
-- Environment Variables: python-dotenv
+-  Backend: FastAPI
+-  Database: PostgreSQL
+-  Authentication: JWT (JSON Web Token)
+-  ORM: SQLAlchemy
+-  Password Hashing: Passlib
+-  Environment Variables: python-dotenv
 
 ### Installation
 
@@ -34,7 +34,7 @@ Follow these steps to set up the project locally:
 Clone the repository:
 
 ```shell
-[https://github.com/BertinKimberly/fms_fastapi.git](https://github.com/BertinKimberly/fms_fastapi.git)
+https://github.com/BertinKimberly/fms_fastapi.git
 
 cd fms_fastapi
 
@@ -48,9 +48,10 @@ pip install -r requirements.txt
 
 #### Set up the PostgreSQL database:
 
-- Create a new database in PostgreSQL.
+-  Create a new database in PostgreSQL.
 
-- Add the database URL to your `.env` file:
+-  Add the database URL to your `.env` file:
+
 ```js
 DATABASE_URL=postgresql://user:password@localhost/dbname
 ```
@@ -62,6 +63,7 @@ DATABASE_URL=postgresql://user:password@localhost/dbname
 ```
 
 #### Run the application
+
 Use uvicorn
 
 ```shell
